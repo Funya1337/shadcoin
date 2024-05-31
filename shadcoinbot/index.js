@@ -1,7 +1,7 @@
 const path = require('path')
 const TelegramBot = require('node-telegram-bot-api');
 
-require('dotenv').config({ path: path.resolve(__dirname, '../.env') })
+require('dotenv').config()
 
 const bot = new TelegramBot(process.env.TG_TOKEN, {polling: true});
 const webAppUrl = 'https://ya.ru';
