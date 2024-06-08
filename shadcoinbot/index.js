@@ -4,17 +4,17 @@ const TelegramBot = require('node-telegram-bot-api');
 require('dotenv').config()
 
 const bot = new TelegramBot(process.env.TG_TOKEN, {polling: true});
-const webAppUrl = 'https://ya.ru';
+const webAppUrl = process.env.CLIENT_URL;
 
 bot.on('message', async (msg) => {
     const chatId = msg.chat.id;
     const text = msg.text;
   
     if (text === '/start') {
-      await bot.sendMessage(chatId, 'Make an order!', {
+      await bot.sendMessage(chatId, 'Start farm coins for free', {
           reply_markup: {
               inline_keyboard: [
-                  [{text: "Make an order", web_app: {url: webAppUrl}}]
+                  [{text: "Play in 1 click!", web_app: {url: webAppUrl}}]
               ]
           }
         });

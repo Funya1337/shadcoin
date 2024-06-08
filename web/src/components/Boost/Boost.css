@@ -1,0 +1,35 @@
+.small-card {
+    width: 100%;
+    max-width: 200px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the card */
+    background: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color) !important;
+  }
+  
+  .small-card .ant-card-body {
+    padding: 8px; /* Adjust the padding as needed */
+  }
+  
+  .small-card .ant-card-meta-avatar {
+    margin-right: 8px; /* Adjust spacing between avatar and text */
+  }
+  
+  .small-card .ant-card-meta-title {
+    font-size: 14px; /* Adjust title font size */
+  }
+  
+  .small-card .ant-card-meta-description {
+    font-size: 12px; /* Adjust description font size */
+  }
+
+  .card-price {
+    font-size: 14px; /* Adjust price font size */
+    font-weight: bold; /* Make the price bold */
+    color: #ffffff; /* Text color */
+    background-color: #ff4d4f; /* Highlight background color */
+    padding: 4px 8px; /* Padding around the price text */
+    border-radius: 4px; /* Rounded corners */
+    display: inline-block; /* Ensure the background color wraps around the text */
+    margin-top: 4px; /* Adjust margin as needed */
+  }
+  
